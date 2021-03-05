@@ -344,7 +344,7 @@ class BeamSearchScorer(BeamScorer):
 
 class BeamHypotheses:
     def __init__(self, num_beams: int, max_length: int, length_penalty: float, early_stopping: bool,
-                 disable_length_normalization: bool = True):
+                 disable_length_normalization: bool = False):
         """
         Initialize n-best list of hypotheses.
         """
